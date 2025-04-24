@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard - City Council Taxpayer Portal</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f2f6fc;
+    }
+    .header {
+      background-color: #003366;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    .sidebar {
+      width: 250px;
+      background: #ffffff;
+      height: 100vh;
+      position: fixed;
+      top: 70px;
+      left: 0;
+      padding: 20px;
+      box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    }
+    .sidebar a {
+      display: block;
+      margin: 20px 0;
+      color: #003366;
+      text-decoration: none;
+      font-size: 18px;
+    }
+    .sidebar a:hover {
+      color: #0055a5;
+    }
+    .main-content {
+      margin-left: 270px;
+      padding: 20px;
+    }
+    .card {
+      background: #ffffff;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    }
+    .card h3 {
+      margin-top: 0;
+      color: #003366;
+    }
+    .logout-btn {
+      margin-top: 30px;
+      background-color: #ff4d4d;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      border-radius: 5px;
+      text-decoration: none;
+      display: inline-block;
+      width: 100%;
+    }
+    .logout-btn:hover {
+      background-color: #cc0000;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>Welcome to the City Council Taxpayer Portal</h1>
+  </div>
+
+  <div class="sidebar">
+    <h2>Menu</h2>
+    <a href="#profile">Profile</a>
+    <a href="#taxinfo">Tax Payment Info</a>
+    <a href="#history">Payment History</a>
+    <a href="#settings">Settings</a>
+    <a class="logout-btn" href="login.html">Logout</a>
+  </div>
+
+  <div class="main-content">
+    <div id="profile" class="card">
+      <h3>Profile</h3>
+      <p><strong>Full Name:</strong> Malek M Makuac</p>
+      <p><strong>Email:</strong> malekmanyuat@gmail.com</p>
+      <p><strong>Phone:</strong> +211 955 000 000</p>
+      <p><strong>Taxpayer ID:</strong> TXP-123456</p>
+    </div>
+
+    <div id="taxinfo" class="card">
+      <h3>Current Tax Payment</h3>
+      <p><strong>Due Amount:</strong> SSP 50,000</p>
+      <p><strong>Due Date:</strong> 30 April 2025</p>
+      <button style="padding:10px 20px; background-color: #003366; color:white; border:none; border-radius:5px;">Pay Now</button>
+    </div>
+
+    <div id="history" class="card">
+      <h3>Payment History</h3>
+      <ul>
+        <li>Paid SSP 20,000 on 10 Jan 2025</li>
+        <li>Paid SSP 35,000 on 15 Oct 2024</li>
+      </ul>
+    </div>
+
+    <div id="settings" class="card">
+      <h3>Settings</h3>
+      <p>Change password, update profile, and more.</p>
+    </div>
+  </div>
+
+</body>
+</html>
